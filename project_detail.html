@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="_images/logo/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="flickity.css">
+  <link rel="stylesheet" href="fullscreen.css">
+  <link rel="stylesheet" href="style.css">
+  <title>iPrint Qatar</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <div>
+    <nav class="nav">
+      <div class="nav-container" id="navContainer">
+        <!-- logo -->
+        <a href="index.html"><img class="nav-logo" src="_images/logo/logo_hw.png"></a>
+        <!-- collapse button -->
+        <a class="nav-toggle" href="javascript:void(0);" onclick="navMenu()">
+          <img src="_images/misc/menu_w.svg" alt="menu icon">
+        </a>
+        <!-- nav links -->
+        <div class="nav-menu" id="navMenu">
+          <a class="nav-link link-inside" href="about.html">Who We Are</a>
+          <a class="nav-link link-inside" href="services.html">What We Do</a>
+          <a class="nav-link link-inside" href="projects.html">Our Projects</a>
+          <a class="nav-link link-inside" href="clients.html">Our Clients</a>
+          <a class="nav-link mobile link-inside" href="contact.html">Contact US</a>
+          <a class="nav-link desktop btn-inside" href="contact.html">Contact US</a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-info header-project">
+    </div>
+  </div>
+
+  <!-- project details -->
+  <section class="main-block xl" id="project-detail">
+    <div class="container column align-center">
+      <div class="container-project-detail">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Our Projects</a></li>
+          <li>Project Name</li>
+        </ul>
+        <h2 class="underline">Project Name</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, vero repellat magni cumque, temporibus sequi
+          unde id voluptatum, rem inventore harum consequatur nisi? Explicabo exercitationem soluta porro dignissimos
+          commodi optio.</p>
+        <div class="container-inside-image">
+          <div class="main-carousel" style="z-index: 5;"
+            data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "fullscreen": true }'>
+            <div class="carousel-cell">
+              <div class="slide">
+                <img src="_images/ip_image_template-project.jpg" alt="temp 1">
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="slide">
+                <img src="_images/ip_image_template-project.jpg" alt="temp 1">
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="slide">
+                <img src="_images/ip_image_template-project.jpg" alt="temp 1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-wrap-project">
+          <iframe width="1140" height="641.25"
+            src="https://www.youtube.com/embed/vlzvhulJqPI?playlist=vlzvhulJqPI&loop=1&autoplay=1&controls=0&modestbranding=1"
+            title="iPrint" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- carousel -->
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-info">
+      <img class="footer-logo" src="_images/logo/logo_h.png">
+      <div class="footer-icons">
+        <a href="#"><img class="sm-icon" src="_images/sm/i-in.png"></a>
+        <a href="#"><img class="sm-icon" src="_images/sm/i-li.png"></a>
+        <a href="#"><img class="sm-icon" src="_images/sm/i-yt.png"></a>
+      </div>
+    </div>
+    <div class="text-center">
+      <p class="copyright">Copyrights © 2020 International Printing Qatar. | <a href="#">Privacy Policy</a></p>
+    </div>
+    <div class="footer-emblem-container">
+      <img class="footer-emblem" src="_images/logo/emblem.png">
+    </div>
+  </footer>
+
+  <!-- javascript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
+  <script src="_script/nav.js"></script>
+</body>
+
+</html>

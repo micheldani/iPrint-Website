@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="_images/logo/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>iPrint Qatar</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <div>
+    <nav class="nav">
+      <div class="nav-container" id="navContainer">
+        <!-- logo -->
+        <a href="index.html"><img class="nav-logo" src="_images/logo/logo_hw.png"></a>
+        <!-- collapse button -->
+        <a class="nav-toggle" href="javascript:void(0);" onclick="navMenu()">
+          <img src="_images/misc/menu_w.svg" alt="menu icon">
+        </a>
+        <!-- nav links -->
+        <div class="nav-menu" id="navMenu">
+          <a class="nav-link link-inside" href="about.html">Who We Are</a>
+          <a class="nav-link link-inside" href="services.html">What We Do</a>
+          <a class="nav-link link-inside active">Our Projects</a>
+          <a class="nav-link link-inside" href="clients.html">Our Clients</a>
+          <a class="nav-link mobile link-inside" href="contact.html">Contact US</a>
+          <a class="nav-link desktop btn-inside" href="contact.html">Contact US</a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-info">
+      <p class="header-text white">OUR PROJECTS</p>
+    </div>
+  </div>
+
+  <!-- projects -->
+  <section class="main-block xl justify-center" id="our-projects">
+    <div class="container-projects justify-center">
+      <div class="filters" id="filterContainer">
+        <div class="filter selected">          
+          <a onclick="filterSelection('all')">All</a>
+        </div>
+        <div class="filter" >          
+          <a onclick="filterSelection('digital')">Digital Printing</a>
+        </div>
+        <div class="filter" >          
+          <a onclick="filterSelection('events')">Events Branding</a>
+        </div>
+        <div class="filter" >          
+          <a onclick="filterSelection('exhibit')">Exhibition Stands</a>
+        </div>
+        <div class="filter" >          
+          <a onclick="filterSelection('merchandise')">Merchand­ising</a>
+        </div>
+        <div class="filter" >          
+          <a onclick="filterSelection('offset')">Offset Printing</a>
+        </div>
+        <div class="filter" >          
+          <a onclick="filterSelection('packaging')">Packaging</a>
+        </div>
+        <div class="filter" >          
+          <a onclick="filterSelection('signage')">Signages</a>
+        </div>
+        <div class="filter" >          
+          <a onclick="filterSelection('vehicle')">Vehicle Wrapping</a>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="project-cel digital">
+          <a class="project-overlay rc" href="project_detail.html">
+            <img class="arrow" src="_images/misc/arrow.svg">
+            <h3 class="project-title">Digital Printing</h3>
+          </a>
+          <div class="project-image">
+            <img class="rc" src="_images/square_image_template.jpg" alt="temp image">
+          </div>
+        </div>
+        <div class="project-cel events">
+          <a class="project-overlay rc" href="project_detail.html">
+            <img class="arrow" src="_images/misc/arrow.svg">
+            <h3 class="project-title">Events Branding</h3>
+          </a>
+          <div class="project-image">
+            <img class="rc" src="_images/square_image_template.jpg" alt="temp image">
+          </div>
+        </div>
+        <div class="project-cel exhibit">
+          <a class="project-overlay rc" href="project_detail.html">
+            <img class="arrow" src="_images/misc/arrow.svg">
+            <h3 class="project-title">Exhibition Stands</h3>
+          </a>
+          <div class="project-image">
+            <img class="rc" src="_images/square_image_template.jpg" alt="temp image">
+          </div>
+        </div>
+        <div class="project-cel merchandise">
+          <a class="project-overlay rc" href="project_detail.html">
+            <img class="arrow" src="_images/misc/arrow.svg">
+            <h3 class="project-title">Merchand&shy;­ising</h3>
+          </a>
+          <div class="project-image">
+            <img class="rc" src="_images/square_image_template.jpg" alt="temp image">
+          </div>
+        </div>
+        <div class="project-cel offset">
+          <a class="project-overlay rc" href="project_detail.html">
+            <img class="arrow" src="_images/misc/arrow.svg">
+            <h3 class="project-title">Offset Printing</h3>
+          </a>
+          <div class="project-image">
+            <img class="rc" src="_images/square_image_template.jpg" alt="temp image">
+          </div>
+        </div>
+        <div class="project-cel packaging">
+          <a class="project-overlay rc" href="project_detail.html">
+            <img class="arrow" src="_images/misc/arrow.svg">
+            <h3 class="project-title">Packaging</h3>
+          </a>
+          <div class="project-image">
+            <img class="rc" src="_images/square_image_template.jpg" alt="temp image">
+          </div>
+        </div>
+        <div class="project-cel signage">
+          <a class="project-overlay rc" href="project_detail.html">
+            <img class="arrow" src="_images/misc/arrow.svg">
+            <h3 class="project-title">Signages</h3>
+          </a>
+          <div class="project-image">
+            <img class="rc" src="_images/square_image_template.jpg" alt="temp image">
+          </div>
+        </div>
+        <div class="project-cel vehicle">
+          <a class="project-overlay rc" href="project_detail.html">
+            <img class="arrow" src="_images/misc/arrow.svg">
+            <h3 class="project-title">Vehicle Wrapping</h3>
+          </a>
+          <div class="project-image">
+            <img class="rc" src="_images/square_image_template.jpg" alt="temp image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-info">
+      <img class="footer-logo" src="_images/logo/logo_h.png">
+      <div class="footer-icons">
+        <a href="#"><img class="sm-icon" src="_images/sm/i-in.png"></a>
+        <a href="#"><img class="sm-icon" src="_images/sm/i-li.png"></a>
+        <a href="#"><img class="sm-icon" src="_images/sm/i-yt.png"></a>
+      </div>
+    </div>
+    <div class="text-center">
+      <p class="copyright">Copyrights © 2020 International Printing Qatar. | <a href="#">Privacy Policy</a></p>
+    </div>
+    <div class="footer-emblem-container">      
+      <img class="footer-emblem" src="_images/logo/emblem.png">
+    </div>
+  </footer>
+
+  <!-- javascript -->
+  <script src="_script/filter.js"></script>
+  <script src="_script/nav.js"></script>
+</body>
+
+</html>

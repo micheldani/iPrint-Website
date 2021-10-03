@@ -1,0 +1,7 @@
+<svg version="1.1" baseProfile="full" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+
+    <line x1="16" x2="104" y1="60" y2="60" stroke="white" stroke-width="32" stroke-linecap="round" fill="none" />
+    <line x1="60" x2="104" y1="16" y2="60" stroke="white" stroke-width="32" stroke-linecap="round" fill="none" />
+    <line x1="60" x2="104" y1="104" y2="60" stroke="white" stroke-width="32" stroke-linecap="round" fill="none" />
+    
+</svg>

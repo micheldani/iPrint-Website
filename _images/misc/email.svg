@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="email">
+    <g fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3" stroke-dasharray="0 10.64">
+      <circle cx="32" cy="32" r="30.5" fill="none"/>
+    </g>
+    <path d="M31.8,6H6.2A3.2,3.2,0,0,0,3.016,9.2L3,28.4a3.209,3.209,0,0,0,3.2,3.2H31.8A3.209,3.209,0,0,0,35,28.4V9.2A3.209,3.209,0,0,0,31.8,6Zm0,6.4L19,20.4l-12.8-8V9.2l12.8,8,12.8-8Z" transform="translate(13 13)" fill="#fff"/>
+  </g>
+</svg>

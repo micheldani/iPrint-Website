@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="_images/logo/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="flickity.css">
+  <link rel="stylesheet" href="style.css">
+  <title>iPrint Qatar</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="nav">
+    <div class="nav-container" id="navContainer">
+      <!-- logo -->
+      <a href="index.html"><img class="nav-logo" src="_images/logo/logo_h.png"></a>
+      <!-- collapse button -->
+      <a class="nav-toggle" href="javascript:void(0);" onclick="navMenu()">
+        <img src="_images/misc/menu.svg" alt="menu icon">
+      </a>
+      <!-- nav links -->
+      <div class="nav-menu" id="navMenu">
+        <a class="nav-link link-home" href="about.html">Who We Are</a>
+        <a class="nav-link link-home" href="services.html">What We Do</a>
+        <a class="nav-link link-home" href="projects.html">Our Projects</a>
+        <a class="nav-link link-home" href="clients.html">Our Clients</a>
+        <a class="nav-link mobile link-inside" href="contact.html">Contact US</a>
+        <a class="nav-link desktop btn-home" href="contact.html">Contact US</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+  <div class="main-carousel"
+    data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "autoPlay": 4000 }'>
+    <div class="carousel-cell">
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/vlzvhulJqPI?playlist=vlzvhulJqPI&loop=1&autoplay=1&controls=0&modestbranding=1"
+          title="iPrint" frameborder="0" allow="autoplay"></iframe>
+      </div>
+    </div>
+    <div class="carousel-cell"><img class="carousel-img" src="_images/carousel_image_template 2.jpg" alt="temp 2"></div>
+    <div class="carousel-cell"><img class="carousel-img" src="_images/carousel_image_template 3.jpg" alt="temp 1"></div>
+  </div>
+
+  <!-- who we are -->
+  <section class="main-block xl" id="who-we-are">
+    <div class="container">
+      <div class="container-text">
+        <h1>Who We Are</h1>
+        <p class="lead">Established out of the passion and experience of its founders in 2010, iPrint (International
+          Printing) set a new benchmark for printing and production services in Qatar.</p>
+        <a class="button" href="about.html">READ MORE</a>
+      </div>
+      <div class="container-image">
+        <img class="rc" src="_images/home_image_template.jpg" alt="temp image">
+      </div>
+    </div>
+  </section>
+
+  <!-- claims -->
+  <section class="divider">
+    <div class="claim-container">
+      <div class="claim-cel">
+        <img class="claim-img" src="_images/misc/claim_1.png" alt="illustration of a qatari landmark">
+        <p class="claim-lead">Proud Qatari <br> Brand</p>
+      </div>
+      <div class="claim-cel">
+        <img class="claim-img" src="_images/misc/claim_2.png" alt="illustration of a clock in motion">
+        <p class="claim-lead">Open Around <br> the Clock</p>
+      </div>
+      <div class="claim-cel">
+        <img class="claim-img" src="_images/misc/claim_3.png" alt="illustration of a printer">
+        <p class="claim-lead">Superb Printing <br> Quality</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- what we do -->
+  <section class="main-block xl" id="what-we-do">
+    <div class="container">
+      <div class="container-text">
+        <h1 class="h1-home">What We Do</h1>
+        <p class="lead">Whatever your project entails, rest assured that at iPrint, you’re in the safest hands.</p>
+        <a class="button" href="services.html">READ MORE</a>
+      </div>
+      <div class="container-image">
+        <img class="rc" src="_images/home_image_template.jpg" alt="temp image">
+      </div>
+    </div>
+  </section>
+
+  <!-- logos -->
+  <section class="divider">
+    <ul class="marquee-content">
+      <li><img class="marquee-client-logo" src="_images/clients/al khaliji.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/ambix.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/auditoire.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/AND.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/baladna.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/bella_ciao.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/chedid.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/cisco.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/commercial_bank.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/deloitte.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/fischer.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/grey_doha.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/GWC.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/hbku.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/hopscotch.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/islq.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/memac.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/microsoft.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/moons.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/pate_sucree.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/power_international.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/qatar_airways.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/qatar_central_bank.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/qatar_first_bank.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/qatar_foundation.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/qatar_islamic_bank.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/qatar_stock_exchange.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/qatar_tourism_council.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/qinwan.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/rail.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/seib.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/sixty_degrees.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/tanween.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/tanzifco.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/the_creative_union.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/the_lebanese_school.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/the_planners.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/united_development_co.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/vendome.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/villa_queen.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/vodafone.png"></li>
+      <li><img class="marquee-client-logo" src="_images/clients/WMP.png"></li>
+    </ul>
+  </section>
+
+  <!-- highlighted projects -->
+  <section class="main-block xl" id="what-we-do">
+    <div class="container column align-center">
+      <h1 class="me-1">Highlighted Projects</h1>
+      <div class="container-flex-home me-3">
+        <div class="project-cel show">
+          <a class="project-overlay rc" href="project_detail.html">
+            <img class="arrow" src="_images/misc/arrow.svg">
+            <h3 class="project-title">PROJECT TITLE</h3>
+          </a>
+          <div class="project-image">
+            <img class="rc" src="_images/square_image_template.jpg" alt="temp image">
+          </div>
+        </div>
+        <div class="project-cel show">
+          <a class="project-overlay rc" href="project_detail.html">
+            <img class="arrow" src="_images/misc/arrow.svg">
+            <h3 class="project-title">PROJECT TITLE</h3>
+          </a>
+          <div class="project-image">
+            <img class="rc" src="_images/square_image_template.jpg" alt="temp image">
+          </div>
+        </div>
+        <div class="project-cel show">
+          <a class="project-overlay rc" href="project_detail.html">
+            <img class="arrow" src="_images/misc/arrow.svg">
+            <h3 class="project-title">PROJECT TITLE</h3>
+          </a>
+          <div class="project-image">
+            <img class="rc" src="_images/square_image_template.jpg" alt="temp image">
+          </div>
+        </div>
+      </div>
+      <a class="button" href="projects.html">VIEW MORE</a>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-info">
+      <img class="footer-logo" src="_images/logo/logo_h.png">
+      <div class="footer-icons">
+        <a href="#"><img class="sm-icon" src="_images/sm/i-in.png"></a>
+        <a href="#"><img class="sm-icon" src="_images/sm/i-li.png"></a>
+        <a href="#"><img class="sm-icon" src="_images/sm/i-yt.png"></a>
+      </div>
+    </div>
+    <div class="text-center">
+      <p class="copyright">Copyrights © 2020 International Printing Qatar. | <a href="#">Privacy Policy</a></p>
+    </div>
+    <div class="footer-emblem-container">
+      <img class="footer-emblem" src="_images/logo/emblem.png">
+    </div>
+  </footer>
+
+  <!-- javascript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="_script/marquee.js"></script>
+  <script src="_script/nav.js"></script>
+</body>
+
+</html>
