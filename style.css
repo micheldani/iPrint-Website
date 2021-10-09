@@ -154,7 +154,8 @@ nav {
     font-weight: 600;
     margin-left: 2em;
     line-height: 1em;
-    color: black;
+    color: white;
+    --btn-line: linear-gradient(120deg, var(--yellow), var(--yellow));
     background: var(--btn-line);
     background-size: 0% 3px;
     background-repeat: no-repeat;
@@ -165,6 +166,7 @@ nav {
 .nav-link:hover, .nav-link:focus {
     background-size: 100% 3px;
     background-position: left bottom;
+    color: var(--yellow);
 }
 
 .nav-link.active {
@@ -194,36 +196,33 @@ nav {
     background-position: right;
 }
 
-.link-home {
-    --btn-line: linear-gradient(120deg, var(--cyan), var(--magenta));
-}
-
-.link-home:hover {
-    color: var(--magenta);
-}
-
-.link-inside {
-    --btn-line: linear-gradient(120deg, var(--yellow), var(--yellow));
-    color: white;
-}
-
-.link-inside:hover {
-    color: var(--yellow);
-}
-
-.btn-home {
-    --btn-bg: linear-gradient(120deg, var(--cyan), var(--magenta), var(--red), var(--yellow));
-    transition: background-position 300ms ease;
-}
-
-.btn-inside {
+.nav-btn {
     --btn-bg: linear-gradient(90deg, var(--cyan), var(--cyan), black, black);
     transition: background-position 100ms ease;
 }
 
-.btn-inside.active {
+.nav-btn.active {
     --btn-bg: linear-gradient(90deg, black, black);
     transition: background-position 100ms ease;
+}
+
+#home .nav-link {
+    --btn-line: linear-gradient(120deg, var(--cyan), var(--magenta));
+    color: black;
+}
+
+#home .nav-link:hover {
+    color: var(--magenta);
+}
+
+#home .nav-btn {
+    --btn-bg: linear-gradient(120deg, var(--cyan), var(--magenta), var(--red), var(--yellow));
+    transition: background-position 300ms ease;
+    color: white;
+}
+
+#home .nav-btn:hover {
+    color:  white;
 }
 
 .header-info {
