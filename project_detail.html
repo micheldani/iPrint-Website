@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="flickity.css">
-  <link rel="stylesheet" href="fullscreen.css">
+  <link rel="stylesheet" href="owl.carousel.css">
+  <link rel="stylesheet" href="owl.theme.default.css">
   <link rel="stylesheet" href="style.css">
   <title>iPrint Qatar</title>
   <style>
@@ -58,36 +58,24 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, vero repellat magni cumque, temporibus sequi
           unde id voluptatum, rem inventore harum consequatur nisi? Explicabo exercitationem soluta porro dignissimos
           commodi optio.</p>
-        <div class="container-inside-image">
-          <div class="main-carousel" style="z-index: 5;"
-            data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "fullscreen": true }'>
-            <div class="carousel-cell">
-              <div class="slide">
-                <img src="_images/ip_image_template-project.jpg" alt="temp 1">
-              </div>
+        <!-- carousel -->
+        <div class="container-project-carousel" id="div-to-expand" style="z-index: 5;">
+          <img class="min-max" src="_images/misc/a-exp.svg" style="z-index: 6;">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="_images/ip_image_template-project.jpg" alt="temp 1">
             </div>
-            <div class="carousel-cell">
-              <div class="slide">
-                <img src="_images/ip_image_template-project.jpg" alt="temp 1">
-              </div>
+            <div class="item">
+              <img src="_images/ip_image_template-project.jpg" alt="temp 2">
             </div>
-            <div class="carousel-cell">
-              <div class="slide">
-                <img src="_images/ip_image_template-project.jpg" alt="temp 1">
-              </div>
+            <div class="item">
+              <img src="_images/ip_image_template-project.jpg" alt="temp 3">
             </div>
           </div>
-        </div>
-        <div class="video-wrap-project">
-          <iframe width="1140" height="641.25"
-            src="https://www.youtube.com/embed/vlzvhulJqPI?playlist=vlzvhulJqPI&loop=1&autoplay=1&controls=0&modestbranding=1"
-            title="iPrint" frameborder="0" allow="autoplay" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- carousel -->
 
   <!-- footer -->
   <footer>
@@ -108,9 +96,39 @@
   </footer>
 
   <!-- javascript -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
+  <script src="_script/jquery.min.js"></script>
+  <script src="_script/owl.carousel.min.js"></script>
   <script src="_script/nav.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        items: 1,
+        margin: 5,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        merge: true,
+        smartSpeed: 750,
+        responsive: {
+          0: {
+            nav: false,
+            dots: false
+          },
+          720: {
+            nav: true,
+            dots: true
+          }
+        }
+      });
+    });
+    $('.min-max').click(function (e) {
+      $('#div-to-expand').toggleClass('fullscreen');
+      $('.owl-carousel').toggleClass('fullscreen');
+      $('#div-to-expand').hasClass("fullscreen") ? $(this).attr("src", "_images/misc/a-con.svg") : $(this).attr("src", "_images/misc/a-exp.svg");
+      $('.owl-carousel').trigger('refresh.owl.carousel');
+    });
+  </script>
 </body>
 
 </html>
